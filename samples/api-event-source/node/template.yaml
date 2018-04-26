@@ -5,14 +5,25 @@ Description: |
   An example RESTful service
 
 Resources:
-  ExampleFunction:
+  GetHandler:
     Type: AWS::Serverless::Function
     Properties:
-      Runtime: nodejs6.10
-      Handler: index.handler
+      Runtime: nodejs8.10
+      Handler: server.getHandler
       Events:
         ListCustomers:
           Type: Api
           Properties:
             Path: /
-            Method: any
+            Method: get
+  PostHandler:
+    Type: AWS::Serverless::Function
+    Properties:
+      Runtime: nodejs8.10
+      Handler: server.postHandler
+      Events:
+        ListCustomers:
+          Type: Api
+          Properties:
+            Path: /
+            Method: post
