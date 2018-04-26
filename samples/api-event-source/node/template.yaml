@@ -2,28 +2,17 @@ AWSTemplateFormatVersion : '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 
 Description: |
-  An example RESTful service
+  A RESTful service for posting lead emails
 
 Resources:
-  GetHandler:
+  LeadsPostHandler:
     Type: AWS::Serverless::Function
     Properties:
       Runtime: nodejs8.10
-      Handler: server.getHandler
+      Handler: server.leadsPostHandler
       Events:
         ListCustomers:
           Type: Api
           Properties:
-            Path: /
-            Method: get
-  PostHandler:
-    Type: AWS::Serverless::Function
-    Properties:
-      Runtime: nodejs8.10
-      Handler: server.postHandler
-      Events:
-        ListCustomers:
-          Type: Api
-          Properties:
-            Path: /
+            Path: /leads
             Method: post

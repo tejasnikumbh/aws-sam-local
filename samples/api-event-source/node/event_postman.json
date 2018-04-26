@@ -1,0 +1,31 @@
+{
+  "httpMethod": "POST",
+  "body": "{\n\t\"email\": \"abc@example.com\"\n}",
+  "resource": "/leads",
+  "requestContext": {
+    "resourcePath": "/leads",
+    "httpMethod": "POST",
+    "stage": "prod",
+    "identity": {
+      "sourceIp": "127.0.0.1:61572"
+    }
+  },
+  "queryStringParameters": {},
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate",
+    "Cache-Control": "no-cache",
+    "Connection": "keep-alive",
+    "Content-Length": "31",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Host": "localhost",
+    "Postman-Token": "07bd6b48-7a1d-48f9-a5ab-33cf7a5047f2",
+    "User-Agent": "PostmanRuntime/7.1.1",
+    "X-Forwarded-Port": "",
+    "X-Forwarded-Proto": ""
+  },
+  "pathParameters": null,
+  "stageVariables": null,
+  "path": "/leads",
+  "isBase64Encoded": false
+}
